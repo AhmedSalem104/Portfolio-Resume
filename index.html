@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/meyawo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -78,501 +78,229 @@
     </header><!-- end of page header -->
 
     <!-- About Section -->
-    <section id="about" class="section animate-on-scroll" data-animation="animate__heartBeat" data-delay="200ms">
+    <section id="about" class="section py-5 bg-gradient" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center gy-4">
+
                 <!-- Image -->
-                <div class="col-lg-5 mb-4 mb-lg-0 text-center">
-                    <img src="assets/imgs/3.jpg" alt="About Me"
-                        class="img-fluid rounded-pill shadow-lg animate__animated animate__zoomIn"
-                        style="max-height: 400px; object-fit: cover;">
+                <div class="col-lg-5 text-center">
+                    <div class="card shadow-lg border-0 rounded-circle mx-auto"
+                        style="max-width: 320px; overflow: hidden;">
+                        <img src="assets/imgs/ME.jpg" alt="About Me"
+                            class="img-fluid rounded-circle animate__animated animate__zoomIn"
+                            style="object-fit: cover; height: 320px; width: 320px;">
+                    </div>
                 </div>
+
                 <!-- Text Content -->
-                <div class="col-lg-7">
-                    <h5 class="text-primary mb-2 animate__animated animate__fadeInUp">Who Am I?</h5>
-                    <h2 class="mb-4 fw-bold animate__animated animate__fadeInUp">About Me</h2>
-                    <p class="text-muted mb-4 animate__animated animate__fadeInUp">
+                <div class="col-lg-7 text-white">
+                    <h5 class="text-warning fw-semibold mb-2 animate__animated animate__fadeInUp"
+                        style="letter-spacing: 2px;">Who Am I?</h5>
+                    <h2 class="mb-4 fw-bold animate__animated animate__fadeInUp"
+                        style="font-size: 3rem; text-shadow: 1px 1px 5px rgba(0,0,0,0.6);">
+                        About Me
+                    </h2>
+                    <p class="mb-4 animate__animated animate__fadeInUp"
+                        style="font-size: 1.1rem; line-height: 1.6; text-shadow: 0 0 5px rgba(0,0,0,0.3);">
                         I'm a Full-Stack Web Developer with experience in building dynamic and modern web applications
-                        using frontend technologies like HTML5, CSS3, JavaScript, TypeScript, Angular, and jQuery, as
-                        well as backend development with C#, .NET Core, .NET Framework, and SQL Server. I'm passionate
-                        about clean code, performance, and building scalable systems following OOP and SOLID principles.
+                        using frontend technologies like <strong>HTML5, CSS3, JavaScript, TypeScript, Angular,
+                            jQuery</strong>,
+                        as well as backend development with <strong>C#, .NET Core, .NET Framework, and SQL
+                            Server</strong>.
+                        Passionate about <em>clean code, performance</em>, and building scalable systems following OOP
+                        and SOLID principles.
                     </p>
-                    <a href="assets/CV/Ahmed abd elhamid FullStack Developer( .NET & Angular).pdf"
-                        class="btn btn-primary btn-lg rounded-pill animate__animated animate__fadeInUp" download>
-                        <i class="bi bi-download me-2"></i>Download My Resume
+                    <a href="assets/CV/Ahmed abd elhamid FullStack Developer( .NET & Angular).pdf" download
+                        class="btn btn-warning btn-lg rounded-pill shadow animate__animated animate__fadeInUp">
+                        <i class="bi bi-download me-2"></i> Download My Resume
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Service Section -->
+
+
+    <!-- service Section -->
     <section id="service" class="section py-5 bg-light">
         <div class="container text-center">
-            <p class="text-primary fw-semibold fs-5 animate__animated animate__fadeInDown">What I Do?</p>
+            <p class="text-primary fw-semibold fs-5 animate__animated animate__fadeInDown">
+                What I Do?
+            </p>
             <h2 class="fw-bold mb-5 animate__animated animate__fadeInDown">Services</h2>
 
-            <div class="row g-4 justify-content-center">
-                <!-- Service 1 -->
-                <div class="col-md-6 col-lg-3 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="300ms">
-                    <div class="card border-0 shadow-lg rounded-5 p-5 h-100 text-center">
-                        <img src="assets/imgs/responsive.svg" alt="Web Development" class="mb-4 mx-auto"
-                            style="width: 70px;">
-                        <h5 class="fw-bold mb-3 fs-5">Web App Development</h5>
-                        <p class="text-muted">
-                            Responsive, scalable apps using Angular & ASP.NET Core with robust APIs and SQL databases.
-                        </p>
+            <!-- Swiper wrapper -->
+            <div class="swiper service-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Service 1 -->
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-lg rounded-5 p-5 h-100 text-center" style="width: 100%;">
+                            <img src="assets/imgs/responsive.svg" alt="Web Development" class="mb-4 mx-auto"
+                                style="width: 70px;" />
+                            <h5 class="fw-bold mb-3 fs-5">Web App Development</h5>
+                            <p class="text-muted">
+                                Responsive, scalable apps using Angular & ASP.NET Core with robust
+                                APIs and SQL databases.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-lg rounded-5 p-5 h-100 text-center" style="width: 100%;">
+                            <img src="assets/imgs/toolbox.svg" alt="Backend Development" class="mb-4 mx-auto"
+                                style="width: 70px;" />
+                            <h5 class="fw-bold mb-3 fs-5">Backend & APIs</h5>
+                            <p class="text-muted">
+                                Secure .NET Core systems with C#, Code First approach & SOLID
+                                principles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-lg rounded-5 p-5 h-100 text-center" style="width: 100%;">
+                            <img src="assets/imgs/pencil-case.svg" alt="UI Design" class="mb-4 mx-auto"
+                                style="width: 70px;" />
+                            <h5 class="fw-bold mb-3 fs-5">Frontend & UI Design</h5>
+                            <p class="text-muted">
+                                Modern, interactive UIs with HTML, CSS, Tailwind, Bootstrap, Angular &
+                                TypeScript.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="swiper-slide">
+                        <div class="card border-0 shadow-lg rounded-5 p-5 h-100 text-center" style="width: 100%;">
+                            <img src="assets/imgs/analytics.svg" alt="Reports" class="mb-4 mx-auto"
+                                style="width: 70px;" />
+                            <h5 class="fw-bold mb-3 fs-5">Reports & Analysis</h5>
+                            <p class="text-muted">
+                                Crystal Reports, Role-based Access, UML, and Agile-based system
+                                analysis.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="col-md-6 col-lg-3 section animate-on-scroll" data-animation="animate__fadeInLeft"
-                    data-delay="400ms">
-                    <div class="card border-0 shadow-lg rounded-5 p-5 h-100 text-center">
-                        <img src="assets/imgs/toolbox.svg" alt="Backend Development" class="mb-4 mx-auto"
-                            style="width: 70px;">
-                        <h5 class="fw-bold mb-3 fs-5">Backend & APIs</h5>
-                        <p class="text-muted">
-                            Secure .NET Core systems with C#, Code First approach & SOLID principles.
-                        </p>
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <!-- projects Section -->
+    <section id="projects" class="section py-5 bg-light">
+        <div class="container text-center">
+            <p class="section-subtitle text-uppercase fw-semibold text-muted mb-2" style="letter-spacing: 2px;">What I
+                Did ?</p>
+            <h6 class="section-title mb-5 fw-bold" style="font-size: 2.5rem; color: #333;">Projects</h6>
+
+            <!-- Links to filter -->
+            <div id="filter-links" class="mb-4 d-flex justify-content-center gap-4 flex-wrap">
+                <a href="#" class="filter-link active px-3 py-2 rounded-pill fw-semibold text-decoration-none"
+                    data-filter="all" style="cursor:pointer;">All</a>
+                <a href="#" class="filter-link px-3 py-2 rounded-pill fw-semibold text-decoration-none text-muted"
+                    data-filter="web" style="cursor:pointer;">Web Apps</a>
+                <a href="#" class="filter-link px-3 py-2 rounded-pill fw-semibold text-decoration-none text-muted"
+                    data-filter="dashboard" style="cursor:pointer;">Dashboards</a>
+                <a href="#" class="filter-link px-3 py-2 rounded-pill fw-semibold text-decoration-none text-muted"
+                    data-filter="personal" style="cursor:pointer;">Personal</a>
+            </div>
+
+            <!-- Projects -->
+            <div id="projects-container" class="d-flex flex-wrap justify-content-center gap-4" style="gap: 20px;">
+
+                <!-- Project Card 1 -->
+                <div class="project-card" data-category="web"
+                    style="width: 300px; background:#222; color:white; border-radius:10px; padding:15px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.3); transition: transform 0.3s ease;">
+                    <img src="assets/imgs/Yummey - Love and Lemons.jpeg" alt="Mealify"
+                        style="width:100%; border-radius:10px; object-fit: cover; height: 180px;">
+                    <h4 class="mt-3 fw-bold" style="font-size: 1.3rem;">Mealify</h4>
+                    <div class="mt-2">
+                        <a href="https://github.com/ahmedsalem104/Mealify" target="_blank"
+                            class="text-info fw-semibold me-3 text-decoration-none"
+                            style="transition: color 0.3s;">GitHub</a>
+                        <a href="https://ahmedsalem104.github.io/Mealify/" target="_blank"
+                            class="text-warning fw-semibold text-decoration-none"
+                            style="transition: color 0.3s;">Demo</a>
                     </div>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="col-md-6 col-lg-3 section animate-on-scroll" data-animation="animate__fadeInRight"
-                    data-delay="500ms">
-                    <div class="card border-0 shadow-lg rounded-5 p-5 h-100 text-center">
-                        <img src="assets/imgs/pencil-case.svg" alt="UI Design" class="mb-4 mx-auto"
-                            style="width: 70px;">
-                        <h5 class="fw-bold mb-3 fs-5">Frontend & UI Design</h5>
-                        <p class="text-muted">
-                            Modern, interactive UIs with HTML, CSS, Tailwind, Bootstrap, Angular & TypeScript.
-                        </p>
+                <!-- Project Card 2 -->
+                <div class="project-card" data-category="dashboard"
+                    style="width: 300px; background:#222; color:white; border-radius:10px; padding:15px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.3); transition: transform 0.3s ease;">
+                    <img src="assets/imgs/Portfolio.jpeg" alt="Admin Dashboard"
+                        style="width:100%; border-radius:10px; object-fit: cover; height: 180px;">
+                    <h4 class="mt-3 fw-bold" style="font-size: 1.3rem;">Admin Dashboard</h4>
+                    <div class="mt-2">
+                        <a href="https://github.com/ahmedsalem104/Admin-Dashboard" target="_blank"
+                            class="text-info fw-semibold me-3 text-decoration-none"
+                            style="transition: color 0.3s;">GitHub</a>
+                        <a href="https://ahmedsalem104.github.io/Admin-Dashboard/" target="_blank"
+                            class="text-warning fw-semibold text-decoration-none"
+                            style="transition: color 0.3s;">Demo</a>
                     </div>
                 </div>
 
-                <!-- Service 4 -->
-                <div class="col-md-6 col-lg-3 section animate-on-scroll" data-animation="animate__flipInY"
-                    data-delay="600ms">
-                    <div class="card border-0 shadow-lg rounded-5 p-5 h-100 text-center">
-                        <img src="assets/imgs/analytics.svg" alt="Reports" class="mb-4 mx-auto" style="width: 70px;">
-                        <h5 class="fw-bold mb-3 fs-5">Reports & Analysis</h5>
-                        <p class="text-muted">
-                            Crystal Reports, Role-based Access, UML, and Agile-based system analysis.
-                        </p>
+                <!-- Project Card 3 -->
+                <div class="project-card" data-category="personal"
+                    style="width: 300px; background:#222; color:white; border-radius:10px; padding:15px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.3); transition: transform 0.3s ease;">
+                     <img src="assets/imgs/Yummey - Love and Lemons.jpeg" alt="Mealify"
+                        style="width:100%; border-radius:10px; object-fit: cover; height: 180px;">
+                    <h4 class="mt-3 fw-bold" style="font-size: 1.3rem;">Leon</h4>
+                    <div class="mt-2">
+                        <a href="https://github.com/ahmedsalem104/Leon" target="_blank"
+                            class="text-info fw-semibold me-3 text-decoration-none"
+                            style="transition: color 0.3s;">GitHub</a>
+                        <a href="https://ahmedsalem104.github.io/Leon/" target="_blank"
+                            class="text-warning fw-semibold text-decoration-none"
+                            style="transition: color 0.3s;">Demo</a>
                     </div>
                 </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" data-category="personal"
+                    style="width: 300px; background:#222; color:white; border-radius:10px; padding:15px; box-shadow: 0 8px 24px rgb(0 0 0 / 0.3); transition: transform 0.3s ease;">
+                      <img src="assets/imgs/Yummey - Love and Lemons.jpeg" alt="Mealify"
+                        style="width:100%; border-radius:10px; object-fit: cover; height: 180px;">
+                    <h4 class="mt-3 fw-bold" style="font-size: 1.3rem;">Bondi</h4>
+                    <div class="mt-2">
+                        <a href="https://github.com/ahmedsalem104/Bondi" target="_blank"
+                            class="text-info fw-semibold me-3 text-decoration-none"
+                            style="transition: color 0.3s;">GitHub</a>
+                        <a href="https://ahmedsalem104.github.io/Bondi/" target="_blank"
+                            class="text-warning fw-semibold text-decoration-none"
+                            style="transition: color 0.3s;">Demo</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- portfolio section -->
-    <section id="projects" class="section py-5  ">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-5 ">Projects</h6>
-            <!-- row -->
-            <div class="row  ">
-                <!-- E-Commerce Project -->
-                <div class="col-md-4 mb-4 px-2  section animate-on-scroll  " data-animation="animate__zoomIn"
-                    data-delay="600ms">
-                    <a href="https://e-commerce-project-two-sandy.vercel.app/home"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/ECommerce App.jpeg" class="portfolio-card-img w-100 transition"
-                            alt="E-Commerce Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>E-Commerce Project Angular</h4>
-                                <p class="font-weight-normal">Category: E-Commerce Website</p>
-                                <a href="https://github.com/ahmedsalem104/E-Commerce-Project"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://e-commerce-project-two-sandy.vercel.app/home"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded " target="_blank">
-                                    Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Social App Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll " data-animation="animate__zoomIn"
-                    data-delay="610ms">
-                    <a href="https://social-app-orpin-theta.vercel.app/SocialApp"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Social media APP.jpeg" class="portfolio-card-img w-100"
-                            alt="Social App Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Social App Angular</h4>
-                                <p class="font-weight-normal">Category: Social Networking</p>
-                                <a href="https://github.com/ahmedsalem104/Social-App"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://social-app-orpin-theta.vercel.app/SocialApp"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- ToDo List Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="620ms">
-                    <a href="https://todo-list-q1cthe2or-ahmedsalem104s-projects.vercel.app/"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/todo list app.jpeg" class="portfolio-card-img w-100"
-                            alt="ToDo List Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>ToDo List App Angular</h4>
-                                <p class="font-weight-normal">Category: Task Management</p>
-                                <a href="https://github.com/ahmedsalem104/ToDo-List"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://todo-list-q1cthe2or-ahmedsalem104s-projects.vercel.app/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Portfolio Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll " data-animation="animate__zoomIn"
-                    data-delay="630ms">
-                    <a href="https://ahmedsalem104.github.io/Portfolio/"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Portfolio.jpeg" class="portfolio-card-img w-100" alt="Portfolio Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>My Portfolio</h4>
-                                <p class="font-weight-normal">Category: Personal Website</p>
-                                <a href="https://github.com/ahmedsalem104/Portfolio"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/Portfolio/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Quiz App Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="640ms">
-                    <a href="https://ahmedsalem104.github.io/QuizAppProject/"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Quiz App.jpeg" class="portfolio-card-img w-100" alt="Quiz App Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Quiz App</h4>
-                                <p class="font-weight-normal">Category: Web Application</p>
-                                <a href="https://github.com/ahmedsalem104/QuizAppProject"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/QuizAppProject/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Yummy Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="650ms">
-                    <a href="https://ahmedsalem104.github.io/Yummy/" class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Yummey - Love and Lemons.jpeg" class="portfolio-card-img w-100"
-                            alt="Yummy Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Yummy</h4>
-                                <p class="font-weight-normal">Category: Recipe App</p>
-                                <a href="https://github.com/ahmedsalem104/Yummy"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/Yummy/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Todo-s Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="660ms">
-                    <a href="https://ahmedsalem104.github.io/Todo-s/" class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/todo list app.jpeg" class="portfolio-card-img w-100" alt="Todo-s Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Todo-s</h4>
-                                <p class="font-weight-normal">Category: Task Manager</p>
-                                <a href="https://github.com/ahmedsalem104/Todo-s"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/Todo-s/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Game App Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="670ms">
-                    <a href="https://ahmedsalem104.github.io/GameApp/" class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Game App.jpeg" class="portfolio-card-img w-100" alt="Game App Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Game App</h4>
-                                <p class="font-weight-normal">Category: Game Application</p>
-                                <a href="https://github.com/ahmedsalem104/GameApp"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/GameApp/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Decor App Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="680ms">
-                    <a href="https://ahmedsalem104.github.io/Decor_App/"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Decor App Design.jpeg" class="portfolio-card-img w-100"
-                            alt="Decor App Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Decor App</h4>
-                                <p class="font-weight-normal">Category: Home Decor</p>
-                                <a href="https://github.com/ahmedsalem104/Decor_App"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/Decor_App/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Weather App Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="690ms">
-                    <a href="https://ahmedsalem104.github.io/Weather_App/"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Weather Web App.jpeg" class="portfolio-card-img w-100"
-                            alt="Weather App Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Weather App</h4>
-                                <p class="font-weight-normal">Category: Weather Forecast</p>
-                                <a href="https://github.com/ahmedsalem104/Weather_App"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/Weather_App/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- QR Code Generator Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="700ms">
-                    <a href="https://ahmedsalem104.github.io/QR-Code-Generator/"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/QR Code Tipping App.jpeg" class="portfolio-card-img w-100"
-                            alt="QR Code Generator Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>QR Code Generator</h4>
-                                <p class="font-weight-normal">Category: Web Application</p>
-                                <a href="https://github.com/ahmedsalem104/QR-Code-Generator"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/QR-Code-Generator/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- CRUD Operations Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="710ms">
-                    <a href="https://ahmedsalem104.github.io/CRUDSOperation_JS/"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/CRUD Operations App.jpeg" class="portfolio-card-img w-100"
-                            alt="CRUD Operations Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>CRUD Operations</h4>
-                                <p class="font-weight-normal">Category: Web Application</p>
-                                <a href="https://github.com/ahmedsalem104/CRUDSOperation_JS"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/CRUDSOperation_JS/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Login System Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="720ms">
-                    <a href="https://ahmedsalem104.github.io/LoginSystem/"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Login System Project.jpeg" class="portfolio-card-img w-100"
-                            alt="Login System Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Login System</h4>
-                                <p class="font-weight-normal">Category: Authentication</p>
-                                <a href="https://github.com/ahmedsalem104/LoginSystem"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/LoginSystem/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Mealify Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="730ms">
-                    <a href="https://ahmedsalem104.github.io/Mealify/" class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Yummey - Love and Lemons.jpeg" class="portfolio-card-img w-100"
-                            alt="Mealify Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Mealify</h4>
-                                <p class="font-weight-normal">Category: Food & Recipes</p>
-                                <a href="https://github.com/ahmedsalem104/Mealify"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/Mealify/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Gerold Project -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="740ms">
-                    <a href="https://ahmedsalem104.github.io/Gerold/" class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Gerold  Designer Portfolio.jpeg" class="portfolio-card-img w-100"
-                            alt="Gerold Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>Gerold</h4>
-                                <p class="font-weight-normal">Category: Personal Branding</p>
-                                <a href="https://github.com/ahmedsalem104/Gerold"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/Gerold/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- DevFolio DevFolio -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="750ms">
-                    <a href="https://ahmedsalem104.github.io/DevFolio/"
-                        class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/DevFolio.png" class="portfolio-card-img w-100" alt="Gerold Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>DevFolio</h4>
-                                <p class="font-weight-normal">Category: Personal Branding</p>
-                                <a href="https://github.com/ahmedsalem104/DevFolio"
-                                    class="btn  btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/DevFolio/"
-                                    class="btn  btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-                <!-- DANIELS  DevFolio -->
-                <div class="col-md-4 mb-4 px-2 section animate-on-scroll" data-animation="animate__zoomIn"
-                    data-delay="760ms">
-                    <a href="https://ahmedsalem104.github.io/DANIELS/" class="portfolio-card d-block position-relative">
-                        <img src="assets/imgs/Daniels.png" class="portfolio-card-img w-100 " alt="Gerold Project">
-                        <span
-                            class="portfolio-card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                            <span class="portfolio-card-caption text-center text-white">
-                                <h4>DANIELS</h4>
-                                <p class="font-weight-normal">Category: Personal Branding</p>
-                                <a href="https://github.com/ahmedsalem104/DANIELS"
-                                    class="btn btn-outline-dark me-2 shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank">GitHub</a>
-                                <a href="https://ahmedsalem104.github.io/DANIELS/"
-                                    class="btn btn-outline-primary shadow hover-shadow rounded mt-2 mb-2"
-                                    target="_blank"> Demo</a>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-
-
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
 
     <!-- Skills Section -->
     <section id="skills" class="section animate-on-scroll py-6" data-animation="animate__flipInX" data-delay="800ms">
         <div class="container text-center">
             <p class="section-subtitle text-muted">What I’m Great At</p>
-            <h6 class="section-title mb-5 display-6 fw-bold">My Skills</h6>
+            <h2 class="section-title mb-5 fw-bold">My Skills</h2>
 
             <div class="row justify-content-center gy-4">
                 <!-- Frontend Skills Card -->
                 <div class="col-lg-5 col-md-6 mb-4 px-3">
-                    <div class="card shadow h-100 border-0">
+                    <div class="card skill-card shadow h-100 border-0">
                         <div class="card-body p-4">
                             <h5 class="card-title text-primary mb-4">
                                 <i class="ti-desktop me-2"></i> Frontend Development
                             </h5>
-                            <ul class="list-unstyled text-start">
+                            <ul class="list-unstyled text-start skill-list">
                                 <li><i class="ti-paint-bucket text-primary me-2"></i> HTML5, CSS3, Bootstrap, Tailwind
                                     CSS</li>
                                 <li><i class="ti-bolt text-primary me-2"></i> JavaScript, TypeScript</li>
@@ -586,12 +314,12 @@
 
                 <!-- Backend & Tools Skills Card -->
                 <div class="col-lg-5 col-md-6 mb-4 px-3">
-                    <div class="card shadow h-100 border-0">
+                    <div class="card skill-card shadow h-100 border-0">
                         <div class="card-body p-4">
                             <h5 class="card-title text-danger mb-4">
                                 <i class="ti-server me-2"></i> Backend & Tools
                             </h5>
-                            <ul class="list-unstyled text-start">
+                            <ul class="list-unstyled text-start skill-list">
                                 <li><i class="ti-microsoft-alt text-danger me-2"></i> C#, .NET Core, .NET Framework</li>
                                 <li><i class="ti-settings text-danger me-2"></i> OOP, SOLID Principles</li>
                                 <li><i class="ti-bar-chart text-danger me-2"></i> SQL Server, Advanced SQL</li>
@@ -604,10 +332,6 @@
             </div>
         </div>
     </section>
-
-
-
-
 
     <!-- Education Section -->
     <section id="education" class="section animate-on-scroll py-5" data-animation="animate__rollIn" data-delay="1000ms">
@@ -647,75 +371,48 @@
         </div>
     </section>
 
-
     <!-- Certifications Section -->
-    <section id="certifications" class="py-5 section animate-on-scroll bg-light" data-animation="animate__fadeInTopLeft"
-        data-delay="1200ms">
+    <section id="certifications" class="cert-section section py-5">
         <div class="container">
-            <div class="text-center mb-5">
-                <i class="ti-certificate fa-3x text-warning mb-3"></i>
-                <h2 class="card-title text-primary mb-4">
-                    <i class="ti-medall fa-3x text-warning mb-3"></i> Certifications
+            <div class="cert-header text-center mb-5">
+                <i class="ti-certificate cert-icon"></i>
+                <h2 class="cert-title">
+                    <i class="ti-medall"></i> Certifications
                 </h2>
-                <p class="text-muted">Professional diplomas and certifications I have completed</p>
+                <p class="cert-desc">Professional diplomas and certifications I have completed</p>
             </div>
 
             <div class="row g-4">
-                <!-- Certification Card -->
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark"><i class="ti-medall text-warning mb-3"
-                                    style="font-size: 2rem;"></i>
-                                Frontend Developer Diploma</h5>
-                            <p class="card-text">
-                                <strong>Technologies:</strong> HTML5, CSS3, JavaScript, Angular, TypeScript, jQuery,
-                                Bootstrap, Tailwind CSS, Sass, Figma.
-                            </p>
-                            <p class="text-muted mb-0">Issued by: Route Academy (2024)</p>
-                        </div>
+                    <div class="cert-card">
+                        <h5><i class="ti-medall"></i> Frontend Developer Diploma</h5>
+                        <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Angular, TypeScript, jQuery,
+                            Bootstrap, Tailwind CSS, Sass, Figma.</p>
+                        <p class="issuer">Issued by: Route Academy (2024)</p>
                     </div>
                 </div>
 
-                <!-- Certification Card -->
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark"><i class="ti-medall text-warning mb-3"
-                                    style="font-size: 2rem;"></i> Backend Developer Diploma</h5>
-                            <p class="card-text">
-                                <strong>Technologies:</strong> C#, OOP, C# Advanced, SQL Server, .NET Core.
-                            </p>
-                            <p class="text-muted mb-0">Issued by: Route Academy (2024)</p>
-                        </div>
+                    <div class="cert-card">
+                        <h5><i class="ti-medall"></i> Backend Developer Diploma</h5>
+                        <p><strong>Technologies:</strong> C#, OOP, C# Advanced, SQL Server, .NET Core.</p>
+                        <p class="issuer">Issued by: Route Academy (2024)</p>
                     </div>
                 </div>
 
-                <!-- Certification Card -->
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark"><i class="ti-medall text-warning mb-3"
-                                    style="font-size: 2rem;"></i> Full Stack Diploma</h5>
-                            <p class="card-text">
-                                <strong>Focus:</strong> Frontend & Backend with .NET and MVC.
-                            </p>
-                            <p class="text-muted mb-0">Issued by: Russian Culture Center (2022)</p>
-                        </div>
+                    <div class="cert-card">
+                        <h5><i class="ti-medall"></i> Full Stack Diploma</h5>
+                        <p><strong>Focus:</strong> Frontend & Backend with .NET and MVC.</p>
+                        <p class="issuer">Issued by: Russian Culture Center (2022)</p>
                     </div>
                 </div>
 
-                <!-- Certification Card -->
                 <div class="col-md-6">
-                    <div class="card h-100 shadow-sm border-0">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark"><i class="ti-medall text-warning mb-3"
-                                    style="font-size: 2rem;"></i> Backend Course</h5>
-                            <p class="card-text">
-                                <strong>Topics:</strong> Agile, UML, C#, OOP Basics, ASP.NET MVC (Code-First).
-                            </p>
-                            <p class="text-muted mb-0">Issued by: egy_is (2021)</p>
-                        </div>
+                    <div class="cert-card">
+                        <h5><i class="ti-medall"></i> Backend Course</h5>
+                        <p><strong>Topics:</strong> Agile, UML, C#, OOP Basics, ASP.NET MVC (Code-First).</p>
+                        <p class="issuer">Issued by: egy_is (2021)</p>
                     </div>
                 </div>
             </div>
@@ -723,101 +420,101 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="ContactMe" class="section animate-on-scroll py-5"
-        style="background: linear-gradient(135deg, #0069d1, #d1faff);" data-animation="animate__backInRight"
-        data-delay="1400ms">
+    <section id="ContactMe" class="section py-5" style="position: relative; overflow: hidden;">
+        <div class="background-animated"></div>
+
         <div class="container py-5">
             <div class="text-center mb-5">
-                <div class="d-inline-block bg-white shadow rounded-circle p-4 mb-3">
-                    <i class="ti-headphone-alt text-warning" style="font-size: 3rem;"></i>
+                <div class="icon-wrapper shadow rounded-circle p-4 mb-3">
+                    <i class="ti-headphone-alt"></i>
                 </div>
-                <h2 class="text-primary display-5 fw-bold mb-2">Get In Touch</h2>
+                <h2 class="text-primary display-5 fw-bold mb-2 animated-title">Get In Touch</h2>
                 <p class="text-muted fs-5">I’d love to hear from you — let’s talk!</p>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="card shadow-lg border-0 rounded-5 p-5 bg-white">
-                        <div class="card-body">
-                            <form action="https://formspree.io/f/mzzrerak" method="POST"
-                                onsubmit="return showprimaryMessage()" class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="inputName" name="name"
-                                            placeholder="Your Name" required>
-                                        <label for="inputName"></label>
-                                    </div>
-                                </div>
+                <div class="col-lg-8 col-md-10">
+                    <div class="card shadow-lg border-0 rounded-5 p-5 bg-white form-card">
+                        <form action="https://formspree.io/f/mzzrerak" method="POST"
+                            onsubmit="return showprimaryMessage()" class="row g-4 needs-validation" novalidate>
 
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="inputEmail" name="email"
-                                            placeholder="Your Email" required>
-                                        <label for="inputEmail"></label>
-                                    </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="inputName" name="name"
+                                        placeholder="Your Name" required>
+                                    <label for="inputName"> </label>
+                                    <div class="invalid-feedback">Please enter your name.</div>
                                 </div>
+                            </div>
 
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" id="inputMessage" name="message"
-                                            placeholder="Write your message here" style="height: 180px;"
-                                            required></textarea>
-                                        <label for="inputMessage"></label>
-                                    </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="inputEmail" name="email"
+                                        placeholder="Your Email" required>
+                                    <label for="inputEmail"> </label>
+                                    <div class="invalid-feedback">Please enter a valid email address.</div>
                                 </div>
+                            </div>
 
-                                <div class="col-12 text-center">
-                                    <button type="submit"
-                                        class="btn btn-warning text-white px-5 py-3 rounded-pill fs-5 shadow-sm transition"
-                                        style="transition: 0.3s ease;">
-                                        <i class="ti-location-arrow me-2"></i>Send Message
-                                    </button>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="inputMessage" name="message"
+                                        placeholder="Write your message here" style="height: 180px;"
+                                        required></textarea>
+                                    <label for="inputMessage"> </label>
+                                    <div class="invalid-feedback">Please write your message.</div>
                                 </div>
+                            </div>
 
-                                <div class="col-12 text-center">
-                                    <p id="primary-message" class="text-success fw-bold mt-3" style="display: none;">
-                                        ✅ Message sent successfully!
-                                    </p>
-                                </div>
-                            </form>
-                        </div>
+                            <div class="col-12 text-center">
+                                <button type="submit"
+                                    class="btn btn-warning text-white px-5 py-3 rounded-pill fs-5 shadow-sm btn-animated">
+                                    <i class="ti-location-arrow me-2"></i>Send Message
+                                </button>
+                            </div>
+
+                            <div class="col-12 text-center">
+                                <p id="primary-message" class="text-success fw-bold mt-3" style="display: none;">
+                                    ✅ Message sent successfully!
+                                </p>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- footer -->
-    <div style="background-color: rgb(207, 207, 207);" class=" animate-on-scroll" data-animation="animate__wobble"
-        data-delay="1500ms">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <footer class="footer">
-
-                <h3 style="color: red;">
+            <div class="footer-content">
+                <h3 class="footer-year">
                     <script>document.write(new Date().getFullYear())</script> &copy;
                 </h3>
+                <h5 class="footer-credit">Created By Eng. Ahmed Salem</h5>
 
-                <h5> Created By Eng.Ahmed Salem</h4>
-
-                    <div class="social-links text-center">
-                        <a href="https://www.facebook.com/ahmed.algazar.9406/" title="Facebook" class="link">
-                            <i class="ti-facebook  text-info"></i>
-                        </a>
-                        <a href="https://wuzzuf.net/me/Ahmed-Salem-6ddd248f3c" title="Wuzzuf" class="link">
-                            <i class="ti-briefcase  text-info"></i>
-                        </a>
-                        <a href="https://github.com/AhmedSalem104" title="GitHub" class="link">
-                            <i class="ti-github  text-dark"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ahmed-a-salem-86b789236" title="LinkedIn" class="link">
-                            <i class="ti-linkedin  text-info"></i>
-                        </a>
-                    </div>
-
-            </footer>
-        </div> <!-- end of page footer -->
-    </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ahmed.algazar.9406/" title="Facebook" target="_blank"
+                        rel="noopener" class="link facebook">
+                        <i class="ti-facebook"></i>
+                    </a>
+                    <a href="https://wuzzuf.net/me/Ahmed-Salem-6ddd248f3c" title="Wuzzuf" target="_blank" rel="noopener"
+                        class="link wuzzuf">
+                        <i class="ti-briefcase"></i>
+                    </a>
+                    <a href="https://github.com/AhmedSalem104" title="GitHub" target="_blank" rel="noopener"
+                        class="link github">
+                        <i class="ti-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-a-salem-86b789236" title="LinkedIn" target="_blank"
+                        rel="noopener" class="link linkedin">
+                        <i class="ti-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
@@ -827,6 +524,7 @@
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 
 </body>
