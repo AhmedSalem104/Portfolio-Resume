@@ -17,6 +17,7 @@ ul {
 body,
 caption {
     text-align: left
+
 }
 
 .bs-popover-auto[x-placement^=top],
@@ -12102,6 +12103,8 @@ pre {
     .header-content {
         padding-left: calc(100% / 5) !important
     }
+    
+
 }
 
 @media (max-width:991.98px) and (prefers-reduced-motion:reduce) {
@@ -12236,7 +12239,7 @@ pre {
 }
 
 .header .header-content {
-    margin-top: 20px;
+    margin-top: 180px;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
